@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@tanstack/react-query": "^5.102.8",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.42.0",
+    "react-router-dom": "^7.18.3",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "autoprefixer": "^10.5.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3"
+  }
+}

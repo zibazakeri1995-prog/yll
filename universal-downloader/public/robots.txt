@@ -1,0 +1,20 @@
+# Universal Media Downloader - Robots.txt
+# Allow all crawlers to access public pages
+
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /faq/
+Allow: /supported-sites/
+Allow: /tools/
+
+# Disallow admin and private areas
+Disallow: /admin
+Disallow: /api
+Disallow: /jobs
+Disallow: /private
+Disallow: /internal
+Disallow: /*?*url=*
+
+# Sitemap
+Sitemap: http://localhost:5173/sitemap.xml

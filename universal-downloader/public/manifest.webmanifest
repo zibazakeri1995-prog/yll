@@ -1,0 +1,20 @@
+{
+  "name": "Universal Media Downloader",
+  "short_name": "MediaDownloader",
+  "description": "Download videos and audio from YouTube, TikTok, Instagram, Facebook, Twitter, and more",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "lang": "en-US"
+}
