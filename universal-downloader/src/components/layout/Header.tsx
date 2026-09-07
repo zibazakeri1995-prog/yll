@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { Menu, X, Sun, Moon, Download, Tool, Globe, FileText, HelpCircle } from 'lucide-react';
+import { Menu, X, Sun, Moon, Download } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
 import { NAVIGATION } from '../../config';
 
