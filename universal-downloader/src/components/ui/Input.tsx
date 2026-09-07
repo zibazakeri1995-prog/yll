@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { cn } from '../../utils';
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -7,6 +7,9 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
 }
+
+let idCounter = 0;
+const generateId = () => `input-${++idCounter}`;
 
 export const Input: React.FC<InputProps> = ({
   label,
@@ -17,7 +20,9 @@ export const Input: React.FC<InputProps> = ({
   id,
   ...props
 }) => {
-  const inputId = id || `input-${Math.random().toString(36).substr(2, 9)}`;
+  // Generate a stable ID for the input element
+  const generatedId = useMemo(() => generateId(), []);
+  const inputId = id || generatedId;
 
   return (
     <div className="w-full">

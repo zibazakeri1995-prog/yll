@@ -1,11 +1,11 @@
-import {
+import type {
   MediaAnalysis,
   DownloadJob,
   DownloadRequest,
   Platform,
   ApiResponse,
   ApiError,
-} from '../types';
+} from '../../types';
 
 /**
  * Core Downloader API Interface

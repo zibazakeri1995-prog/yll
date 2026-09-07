@@ -1,4 +1,4 @@
-import {
+import type {
   MediaAnalysis,
   DownloadJob,
   DownloadRequest,
@@ -9,8 +9,8 @@ import {
   MediaQualityOption,
   PlatformId,
 } from '../../types';
-import { PLATFORMS, getPlatformByUrl, formatDuration } from '../../config/platforms';
-import { DownloaderApi } from './index';
+import { PLATFORMS, getPlatformByUrl } from '../../config/platforms';
+import type { DownloaderApi } from './index';
 
 /**
  * Mock API Implementation

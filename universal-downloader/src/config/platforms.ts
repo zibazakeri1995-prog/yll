@@ -1,4 +1,4 @@
-import { Platform, PlatformId, PlatformStatus, PlatformFeature, MediaFormat } from '../types';
+import type { Platform, PlatformId, MediaFormat } from '../types';
 
 export const PLATFORMS: Platform[] = [
   {

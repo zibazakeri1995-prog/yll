@@ -1,4 +1,4 @@
-import { PlatformId, MediaFormat, MediaQuality } from '../types';
+import type { PlatformId, MediaFormat, MediaQuality } from '../types';
 
 export const SITE_CONFIG = {
   name: import.meta.env.VITE_SITE_NAME || 'Universal Media Downloader',

@@ -25,7 +25,7 @@ export interface Platform {
   supportedFormats: MediaFormat[];
   supportedFeatures: PlatformFeature[];
   status: PlatformStatus;
-  urlPatterns: string[];
+  urlPatterns: RegExp[];
   description: string;
 }
 

@@ -1,4 +1,4 @@
-import { SeoPage } from '../../types';
+import type { SeoPage } from '../types';
 
 export const seoConfig: Record<string, SeoPage> = {
   home: {
@@ -205,7 +205,7 @@ export function getSeoForPath(path: string): SeoPage | undefined {
   const cleanPath = path.split('?')[0].replace(/\/$/, '');
   
   // Find matching SEO config
-  for (const [key, config] of Object.entries(seoConfig)) {
+  for (const config of Object.values(seoConfig)) {
     if (config.path === cleanPath) {
       return config;
     }

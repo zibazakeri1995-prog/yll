@@ -1,8 +1,9 @@
-import { en, TranslationType } from './en';
+import { en } from './en';
+import type { TranslationType } from './en';
 
 type LanguageCode = 'en' | 'fa' | 'ar' | 'es' | 'pt' | 'id' | 'fr' | 'de' | 'tr';
 
-const translations: Record<LanguageCode, TranslationType> = {
+const translations: Partial<Record<LanguageCode, TranslationType>> = {
   en,
   // Future languages can be added here
   // fa: faTranslations,
