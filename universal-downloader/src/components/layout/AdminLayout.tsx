@@ -1,8 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { Menu, X, Sun, Moon, Download, LayoutDashboard, Users, Package, Settings, BarChart3, FileText, Shield, LogOut } from 'lucide-react';
+import { Menu, X, Sun, Moon, Download, LayoutDashboard, Users, Package, Settings, BarChart3, FileText } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
-import { NAVIGATION } from '../../config';
 
 interface AdminLayoutProps {
   children: React.ReactNode;
