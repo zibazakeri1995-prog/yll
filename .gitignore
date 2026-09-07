@@ -7,12 +7,16 @@ dist/
 build/
 .next/
 .nuxt/
-out/
+public/build/
 
 # TypeScript/JavaScript
 *.tsbuildinfo
 *.js.map
+*.jsx.map
 *.ts.map
+
+# Logs
+*.log
 
 # Environment variables
 .env
@@ -20,18 +24,15 @@ out/
 .env.*
 !.env.example
 
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# IDE specific
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
 
 # Coverage
 coverage/
